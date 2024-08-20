@@ -1,0 +1,567 @@
+{
+	"info": {
+		"_postman_id": "854d8e8c-507e-4360-96f0-1feffe972458",
+		"name": "Sagara Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23419236"
+	},
+	"item": [
+		{
+			"name": "Shirts",
+			"item": [
+				{
+					"name": "getAllShirts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/shirts",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"shirts"
+							],
+							"query": [
+								{
+									"key": "color",
+									"value": "ungu",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "xl",
+									"disabled": true
+								},
+								{
+									"key": "stock_lte",
+									"value": "asd",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllShirts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_local}}/shirts",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"shirts"
+									],
+									"query": [
+										{
+											"key": "color",
+											"value": "ungu",
+											"disabled": true
+										},
+										{
+											"key": "size",
+											"value": "xl",
+											"disabled": true
+										},
+										{
+											"key": "stock_lte",
+											"value": "asd",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "886"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"376-Whzk3fd+PY5adW7YwYrM25V+Z5o\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Aug 2024 12:54:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": [\n        {\n            \"id\": 5,\n            \"name\": \"AeroShirts Lengan Panjang\",\n            \"color\": \"jingga\",\n            \"size\": \"l\",\n            \"price\": 100000,\n            \"stock\": 999,\n            \"createdAt\": \"2024-08-20T08:37:43.662Z\",\n            \"updatedAt\": \"2024-08-20T08:37:43.662Z\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Invoker Limited Edition\",\n            \"color\": \"ungu\",\n            \"size\": \"xl\",\n            \"price\": 100000,\n            \"stock\": 999,\n            \"createdAt\": \"2024-08-20T08:37:43.662Z\",\n            \"updatedAt\": \"2024-08-20T08:37:43.662Z\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Enigma Shirts\",\n            \"color\": \"hitam\",\n            \"size\": \"xl\",\n            \"price\": 100000,\n            \"stock\": 4,\n            \"createdAt\": \"2024-08-20T08:37:43.662Z\",\n            \"updatedAt\": \"2024-08-20T08:37:43.662Z\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Sven Rage Shirts\",\n            \"color\": \"merah\",\n            \"size\": \"xxl\",\n            \"price\": 100000,\n            \"stock\": 0,\n            \"createdAt\": \"2024-08-20T08:37:43.662Z\",\n            \"updatedAt\": \"2024-08-20T08:37:43.662Z\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Baju Hitam Polos\",\n            \"color\": \"hitam\",\n            \"size\": \"xl\",\n            \"price\": 10000,\n            \"stock\": 10,\n            \"createdAt\": \"2024-08-20T09:16:19.166Z\",\n            \"updatedAt\": \"2024-08-20T09:16:19.166Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getShirtById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/shirts/8",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"shirts",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getShirtById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_local}}/shirts/8",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"shirts",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cc-uqQTxtXLUr03nTaHhlF8gcnNhms\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Aug 2024 13:12:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 8,\n        \"name\": \"Sven Rage Shirts\",\n        \"color\": \"merah\",\n        \"size\": \"xxl\",\n        \"price\": 100000,\n        \"stock\": 0,\n        \"createdAt\": \"2024-08-20T08:37:43.662Z\",\n        \"updatedAt\": \"2024-08-20T08:37:43.662Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "addShirt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Baju Putih Polos\",\r\n    \"color\":\"Putih\",\r\n    \"size\":\"xl\",\r\n    \"price\":10000,\r\n    \"stock\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/shirts",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"shirts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addShirt",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Baju Putih Polos\",\r\n    \"color\":\"Putih\",\r\n    \"size\":\"xl\",\r\n    \"price\":10000,\r\n    \"stock\":10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/shirts",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"shirts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cc-E7G1iNP5uuRx+4iGe5+6MaoSHEQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Aug 2024 12:57:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 10,\n        \"name\": \"Baju Putih Polos\",\n        \"color\": \"putih\",\n        \"size\": \"xl\",\n        \"price\": 10000,\n        \"stock\": 10,\n        \"createdAt\": \"2024-08-20T12:57:15.553Z\",\n        \"updatedAt\": \"2024-08-20T12:57:15.553Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "checkoutShirt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shirt_id\":9,\r\n    \"total_items\":\"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/shirts/checkout",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"shirts",
+								"checkout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "checkoutShirt",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"shirt_id\":9,\r\n    \"total_items\":10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/shirts/checkout",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"shirts",
+										"checkout"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-fuUgq3NIEohiTRqbb8KBA+uUHFo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Aug 2024 14:00:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"payment\": {\n            \"item\": \"Baju Hitam Polos\",\n            \"total_items\": 10,\n            \"total_payments\": 100000\n        },\n        \"item\": {\n            \"id\": 9,\n            \"name\": \"Baju Hitam Polos\",\n            \"color\": \"hitam\",\n            \"size\": \"xl\",\n            \"price\": 10000,\n            \"stock\": 5,\n            \"createdAt\": \"2024-08-20T09:16:19.166Z\",\n            \"updatedAt\": \"2024-08-20T14:00:58.164Z\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "editShirtById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Baju Hitam Polos\",\r\n    \"color\":\"Hitam\",\r\n    \"size\":\"xl\",\r\n    \"price\":10000,\r\n    \"stock\":15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/shirts/9",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"shirts",
+								"9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editShirt",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Baju Hitam Polos\",\r\n    \"color\":\"Hitam\",\r\n    \"size\":\"xl\",\r\n    \"price\":10000,\r\n    \"stock\":15\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/shirts/9",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"shirts",
+										"9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cb-ne48gQzuZdKjdATGiFkZ+p6pxXA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Aug 2024 12:56:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 9,\n        \"name\": \"Baju Hitam Polos\",\n        \"color\": \"hitam\",\n        \"size\": \"xl\",\n        \"price\": 10000,\n        \"stock\": 15,\n        \"createdAt\": \"2024-08-20T09:16:19.166Z\",\n        \"updatedAt\": \"2024-08-20T12:56:41.564Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteShirtById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/shirts/10",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"shirts",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteShirtById",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/shirts/10",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"shirts",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-ObZsdh1rxlj1+hmnUpJxmDnF5UM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Aug 2024 13:04:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
